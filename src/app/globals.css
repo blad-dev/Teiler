@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+html {
+  height: 100%;
+}
+div#root {
+  height: 100%;
+  padding: 0 30px;
+}
+div.app {
+  height: 100%;
+}
+body {
+  height: 100%;
+  color: black;
+  background: white;
+}
+.whiteColor{
+  color: white;
+}
+.errorColor {
+  color: red;
+}
+.entry {
+  padding: 2px;
+  border-color: black;
+  min-width: 300px;
+  width: 30%;
+  max-width: 400px;
+  border-width: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+  align-self: center;
+}
+.entryLabel {
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+.centered {
+  text-align: center;
+}
+.button {
+  color: white;
+  background-color: rgb(0, 145, 255);
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 15px;
+}
+.forgot {
+  margin: 5px;
+  padding: 0px;
+  color: rgb(215, 215, 215);
+  background-color: transparent;
+}
+.Sign {
+  margin: 5px;
+  padding: 0px;
+  color: blue;
+  background-color: transparent;
+}
+.hello {
+  font-size: 50px;
+  color: white;
+  /*font-weight: bold;*/
+  padding-top: 35px;
+  margin-bottom: 10px;
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.coolLavel {
+  padding: 5px;
+  background-color: #e0ffe9;
+  display: inline-block;
+  width: 27%;
+  border-width: 2px;
+}
+.input-container {
+  position: relative; /* Allows absolute positioning inside */
+}
+.left {
+  padding-left: 30%;
+}
